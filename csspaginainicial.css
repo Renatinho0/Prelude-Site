@@ -1,30 +1,26 @@
-html, body{
-
-
+html, body {
   font-family: "Pixelify Sans", monospace;
-
   margin: 0;
   padding: 0;
   width: 100%;
   background-color: #4e2600;
-    
 }
 
-.fundoPrincipalPaginaInicial{
+/* ============ HERO (fundo com imagem + degradê) ============ */
 
+.hero-banner {
   position: relative;
   width: 100%;
   height: 100vh;
 
   background-image: url(fotos/fundo\ para\ site.jpg);
   background-size: cover;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   background-position: center;
   image-rendering: pixelated;
-
 }
 
-.fundoPrincipalPaginaInicial::after {
+.hero-banner::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -36,237 +32,37 @@ html, body{
 }
 
 
-.cabecalhopaginainicial{
+/* ============ CABEÇALHO (logo + menu + ícone usuário) ============ */
 
-  background-color:transparent ;
+.cabecalho {
+  background-color: transparent;
   height: 150px;
   width: 100%;
-
 }
 
-.logo{
-
+.cabecalho__logo {
   position: absolute;
-  top: 10px;        
+  top: 10px;
   left: 45px;
   display: block;
   z-index: 10;
-
 }
 
-.logo-img {
+.cabecalho__logo-img {
   height: 78px;
   position: absolute;
   left: 50px;
-  width: auto;      
-  cursor: pointer;  
+  width: auto;
+  cursor: pointer;
   transition: transform 0.5s;
-  image-rendering:initial;
-  
+  image-rendering: initial;
 }
 
-
-.logo-img:hover {
+.cabecalho__logo-img:hover {
   transform: scale(1.1);
 }
 
-
-.paginas{
-
-  justify-content: center;
-  position: relative;
-  top: 25px;
-  display: flex;
-  gap: 50px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 22px;
-
-}
-
-.paginas a{
-
-  text-decoration: none;
-  color: #d4af37;
-  font-weight: bold;
-
-}
-
-
-.pergaminhoInicio{
-
-  position: relative;
-  background-image: url(fotos/pergaminho.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 110px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 2px 1px rgba(0,0,0.1);
-  transition: 0.5s;
-  
-
-}
-
-.pergaminhoInicio:hover{
-
-transform: scale(1.1);
-
-}
-
-
-
-.pergaminhoHerois{
-
-  position: relative;
-  background-image: url(fotos/pergaminho.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 125px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 2px 1px rgba(0,0,0.1);
-  transition: 0.5s;
-
-}
-
-.pergaminhoHerois:hover{
-
-transform: scale(1.1);
-
-}
-
-
-
-.pergaminhoViloes{
-
-  position: relative;
-  background-image: url(fotos/pergaminho.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 115px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 2px 1px rgba(0,0,0.1);
-  transition: 0.5s;
-
-}
-
-.pergaminhoViloes:hover{
-
-transform: scale(1.1);
-
-}
-
-
-
-.pergaminhoHistoria{
-
-  position: relative;
-  background-image: url(fotos/pergaminho.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 165px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 2px 1px rgba(0,0,0.1);
-  transition: 0.5s;
-
-}
-
-.pergaminhoHistoria:hover{
-
-transform: scale(1.1);
-
-}
-
-
-
-
-.pergaminhoMapas{
-
-  position: relative;
-  background-image: url(fotos/pergaminho.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 130px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 2px 1px rgba(0,0,0.1);
-  transition: 0.5s;
-
-}
-
-.pergaminhoMapas:hover{
-
-transform: scale(1.1);
-
-}
-
-
-
-.pergaminhoComoJogar{
-
-  position: relative;
-  background-image: url(fotos/pergaminho.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 220px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 2px 1px rgba(0,0,0.1);
-  transition: 0.5s;
-
-}
-
-.pergaminhoComoJogar:hover{
-
-transform: scale(1.1);
-
-}
-
-
-
-
-.pergaminhoCartas{
-
-  position: relative;
-  background-image: url(fotos/pergaminho.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 150px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 2px 1px rgba(0,0,0.1);
-  transition: 0.5s;
-
-}
-
-.pergaminhoCartas:hover{
-
-  transform: scale(1.1);
-
-}
-
-
-
-.icone-usuario{
-
+.cabecalho__icone-usuario {
   color: #d4af37;
   font-weight: bold;
   width: 43px;
@@ -277,70 +73,93 @@ transform: scale(1.1);
   top: 29px;
   transition: 0.5s;
   cursor: pointer;
-
 }
 
-
-.icone-usuario:hover {
+.cabecalho__icone-usuario:hover {
   transform: scale(1.1);
 }
 
 
+/* ============ MENU (itens de pergaminho) ============ */
+
+.menu {
+  justify-content: center;
+  position: relative;
+  top: 25px;
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 22px;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #d4af37;
+  font-weight: bold;
+}
+
+.menu__item {
+  position: relative;
+  background-image: url(fotos/pergaminho.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 1px rgba(0,0,0.1);
+  transition: 0.5s;
+}
+
+.menu__item:hover {
+  transform: scale(1.1);
+}
+
+.menu__item--inicio     { width: 110px; }
+.menu__item--herois     { width: 125px; }
+.menu__item--viloes     { width: 115px; }
+.menu__item--historia   { width: 165px; }
+.menu__item--mapas      { width: 130px; }
+.menu__item--como-jogar { width: 220px; }
+.menu__item--cartas     { width: 150px; }
 
 
+/* ============ INTRO (textos de abertura) ============ */
 
-.textoGrandeRolagem{
-
+.intro__titulo {
   text-align: center;
   position: relative;
   top: 30px;
-  color:#d4af37;
+  color: #d4af37;
   font-size: 40px;
   text-shadow: 2px 1px rgba(0,0,0.1);
 }
 
-
-.textoPequenoRolagem{
-
+.intro__subtitulo {
   text-align: center;
   position: relative;
   top: 40px;
   color: #d4af37;
   font-size: 20px;
   text-shadow: 2px 1px rgba(0,0,0.1);
-
 }
 
 
+/* ============ BRASÕES (herói / vilão) ============ */
 
-
-
-
-.parteBrasoes{ /*Div principal dos brasões*/
-
+.brasoes {
   display: flex;
   gap: 300px;
   justify-content: center;
-
 }
 
-
-.zonaHeroi{
-
-   position: relative;
-
+.brasoes__zona {
+  position: relative;
 }
 
-
-.zonaVilao{
-
-   position: relative;
-
-}
-
-
-.brasaoHeroi{ /*Características do brasão do herói*/
-
+.brasoes__escudo {
   height: 300px;
   width: 300px;
   position: relative;
@@ -349,56 +168,19 @@ transform: scale(1.1);
   filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.6));
   transition: 0.6s;
   z-index: 2;
-
 }
 
-.zonaHeroi:hover .brasaoHeroi{ /*Efeito do brasão indo pro lado para aparecer o pergaminho*/
-
-   transform: translateX(30px) scale(1.05);
-
+.brasoes__zona--heroi:hover .brasoes__escudo--heroi {
+  transform: translateX(30px) scale(1.05);
 }
 
-
-.brasaoVilao{ /*Características do brasão do vilão*/
-
-  height: 300px;
-  width: 300px;
-  position: relative;
-  top: 120px;
-  cursor: pointer;
-  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.6));
-  transition: 0.6s;
-  
-  
-}
-
-.zonaVilao:hover .brasaoVilao{ /*Efeito do brasão indo pro lado para aparecer o pergaminho*/
-
+.brasoes__zona--vilao:hover .brasoes__escudo--vilao {
   transform: translateX(-30px) scale(1.05);
-
 }
 
-
-.pergaminhoHeroi{ /*CRIAÇÃO DO PERGAMINHO HERÓI*/
-
+.brasoes__pergaminho {
   position: absolute;
-  top: 170px;              
-  width: 220px;
-  padding: 20px;
-  background: #e8d3a0;
-  border: 3px solid #6b4a1e;
-  border-radius: 6px;
-  opacity: 0;
-  transition: 0.5s;
-  z-index: 1;
-  pointer-events: none;
-
-
-}
-
-.pergaminhoVilao{ /*CRIAÇÃO DO PERGAMINHO VILÃO*/
-  position: absolute;
-  top: 170px;             
+  top: 170px;
   width: 220px;
   padding: 20px;
   background: #e8d3a0;
@@ -410,47 +192,36 @@ transform: scale(1.1);
   pointer-events: none;
 }
 
-.pergaminhoHeroi{ /*Para que lado vai o pergaminho*/
-  right: 320px;   
+.brasoes__pergaminho--heroi {
+  right: 320px;
   transform: translateX(20px);
 }
 
-.pergaminhoVilao{ /*Para que lado vai o pergaminho*/
-  left: 320px;  
+.brasoes__pergaminho--vilao {
+  left: 320px;
   transform: translateX(-20px);
 }
 
-
-
-.zonaHeroi:hover .pergaminhoHeroi{ /*Aparição do pergaminho*/
-
-opacity: 1;
-transform: translateX(0);
-
-}
-
-
-
-.zonaVilao:hover .pergaminhoVilao{ /*Aparição do pergaminho*/
+.brasoes__zona--heroi:hover .brasoes__pergaminho--heroi {
   opacity: 1;
   transform: translateX(0);
 }
 
+.brasoes__zona--vilao:hover .brasoes__pergaminho--vilao {
+  opacity: 1;
+  transform: translateX(0);
+}
 
-
-
-.tituloPergaminho{ /*Título do pergaminho*/
+.brasoes__titulo-pergaminho {
   display: block;
   font-weight: bold;
   margin-bottom: 6px;
 }
 
 
+/* ============ DIVISOR ============ */
 
-
-
-.linha-divisao{
-
+.divisor {
   position: relative;
   width: 100%;
   height: 14px;
@@ -461,10 +232,9 @@ transform: translateX(0);
 }
 
 
+/* ============ RODAPÉ ============ */
 
-
-footer{
-
+.rodape {
   width: 100%;
   height: 600px;
   display: flex;
@@ -472,11 +242,9 @@ footer{
   align-items: center;
   list-style: none;
   gap: 50px;
-  
 }
 
-.paginas-rodape{
-
+.rodape__links {
   justify-content: center;
   position: relative;
   left: 100px;
@@ -485,34 +253,22 @@ footer{
   gap: 300px;
   list-style: none;
   font-size: 22px;
- 
 }
 
-
-.paginas-rodape a{
-
+.rodape__link {
   text-decoration: none;
   color: #d4af37;
   text-shadow: 2px 1px rgba(0,0,0.1);
   font-weight: bold;
   transition: 0.5s;
-  
- 
 }
 
-
-
-.paginas-rodape a:hover{
-
-  color:#6b4a1e;
+.rodape__link:hover {
+  color: #6b4a1e;
   transform: scale(1.2);
-
 }
 
-
-
-.prelude2026{
-
+.rodape__direitos {
   color: #d4af37;
   position: absolute;
   font-weight: bold;
@@ -523,39 +279,20 @@ footer{
   text-shadow: 2px 1px rgba(0,0,0.1);
 }
 
-.redessociais-rodape{
-
+.rodape__redes {
   position: relative;
   display: flex;
   top: 180px;
   gap: 50px;
   left: 300px;
   width: 200px;
-
-
 }
 
-.iconeredessociais-rodape{
-
+.rodape__icone {
   cursor: pointer;
   transition: 0.5s;
-  
-
 }
 
-.iconeredessociais-rodape:hover{
-
+.rodape__icone:hover {
   transform: scale(1.2);
-
-}
-
-
-
-.fundoPrincipalGeral{
-
-
-  background-color: aqua;
-
-
-
 }
