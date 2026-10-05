@@ -5,172 +5,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=IM+Fell+English&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="../csspaginas/csspaginaherois.css">
+    <link rel="stylesheet" href="../csselementos/cabecalho.css">
     <link rel="stylesheet" href="../csselementos/menu-pergaminhos.css">
-
+    <link rel="stylesheet" href="../csselementos/rodape.css">
+    <link rel="stylesheet" href="../csselementos/divisor.css">
+    <link rel="stylesheet" href="../csspaginas/csspaginaherois.css">
 
     <title>Prelude-Heróis</title>
 </head>
 <body>
 
-    <header>
+    <header class="cabecalho">
 
-        <div class="fundoPrincipalGeral">
+        <a href="PaginaInicial.html" class="cabecalho__logo">
+            <img src="../fotos/logopaginasgerais.png" alt="Logo Dragão" class="cabecalho__logo-img">
+        </a>
 
-            <header class="cabecalhogeral">
+        <ul class="menu-pergaminhos">
 
-            <a href="PaginaInicial.html" class="logo">
-                <img src="../fotos/logopaginasgerais.png" alt="Logo Dragão" class="logo-img">
-            </a>
+            <div class="menu-pergaminhos__item menu-pergaminhos__item--inicio"><li><a href="PaginaInicial.html" class="menu-pergaminhos__link">Início</a></li></div>
 
+            <div class="menu-pergaminhos__item menu-pergaminhos__item--herois"><li><a href="Herois.html" class="menu-pergaminhos__link">Heróis</a></li></div>
 
-        <ul class="paginas">
+            <div class="menu-pergaminhos__item menu-pergaminhos__item--viloes"><li><a href="Viloes.html" class="menu-pergaminhos__link">Vilões</a></li></div>
 
-        <div class="menu-pergaminhos__item menu-pergaminhos__item--inicio"><li><a href="PaginaInicial.html" class="menu-pergaminhos__link">Início</a></li></div>
+            <div class="menu-pergaminhos__item menu-pergaminhos__item--historia"><li><a href="#" class="menu-pergaminhos__link">História</a></li></div>
 
-        <div class="menu-pergaminhos__item menu-pergaminhos__item--herois"><li><a href="Herois.html" class="menu-pergaminhos__link">Heróis</a></li></div>
+            <div class="menu-pergaminhos__item menu-pergaminhos__item--mapas"><li><a href="#" class="menu-pergaminhos__link">Mapas</a></li></div>
 
-        <div class="menu-pergaminhos__item menu-pergaminhos__item--viloes"><li><a href="Viloes.html" class="menu-pergaminhos__link">Vilões</a></li></div>
+            <div class="menu-pergaminhos__item menu-pergaminhos__item--como-jogar"><li><a href="#" class="menu-pergaminhos__link">Como Jogar</a></li></div>
 
-        <div class="menu-pergaminhos__item menu-pergaminhos__item--historia"><li><a href="#" class="menu-pergaminhos__link">História</a></li></div>
+            <div class="menu-pergaminhos__item menu-pergaminhos__item--cartas"><li><a href="#" class="menu-pergaminhos__link">Cartas</a></li></div>
 
-        <div class="menu-pergaminhos__item menu-pergaminhos__item--mapas"><li><a href="#" class="menu-pergaminhos__link">Mapas</a></li></div>
-
-        <div class="menu-pergaminhos__item menu-pergaminhos__item--como-jogar"><li><a href="#" class="menu-pergaminhos__link">Como Jogar</a></li></div>
-
-        <div class="menu-pergaminhos__item menu-pergaminhos__item--cartas"><li><a href="#" class="menu-pergaminhos__link">Cartas</a></li></div>
-        
         </ul>
-
-        </div>
 
     </header>
 
 
+    <main class="pagina-herois">
 
+        <p class="titulo-pagina">Heróis</p>
 
-    <main class="partedeinformacoesherois">
-
-    
-        <p class="tituloheroi">Heróis</p>
-
-
-        <div class="divbotaocadastrarheroi">
-
-            
+        <div class="pagina-herois__acao">
             <a href="CadastroHerois.html" class="botao botao--cadastrar">CADASTRAR HERÓI</a>
-
         </div>
 
+        <div class="cards-herois">
 
-
-        <div class="divcardsdosherois">
-
-        <div class="cardHeroi">
-            <img src="../fotos/fotoherois/molduraheroi.jpg" class="moldura">
-            <img src="../fotos/fotoherois/cavaleiro.png" class="fotoPersonagem">
-            <div class="overlay-info">
-            <div class="nome">Insight Mouris</div>
-            <div class="dado"><b>Idade:</b> 21 anos</div>
-            <div class="dado"><b>País:</b> Rússia</div>
+            <div class="card-heroi">
+                <img src="../fotos/fotoherois/molduraheroi.jpg" class="card-heroi__moldura">
+                <img src="../fotos/fotoherois/cavaleiro.png" class="card-heroi__foto">
+                <div class="card-heroi__overlay">
+                    <div class="card-heroi__nome">Insight Mouris</div>
+                    <div class="card-heroi__dado"><b>Idade:</b> 21 anos</div>
+                    <div class="card-heroi__dado"><b>País:</b> Rússia</div>
+                </div>
             </div>
-        </div>
 
-        <div class="cardHeroi">
-            <img src="../fotos/fotoherois/molduraheroi.jpg" class="moldura">
-            <img src="../fotos/fotoherois/viking.png" class="fotoPersonagem">
-            <div class="overlay-info">
-            <div class="nome">Gunnar Ulfsson</div>
-            <div class="dado"><b>Idade:</b> 50 anos</div>
-            <div class="dado"><b>País:</b> Noruega</div>
+            <div class="card-heroi">
+                <img src="../fotos/fotoherois/molduraheroi.jpg" class="card-heroi__moldura">
+                <img src="../fotos/fotoherois/viking.png" class="card-heroi__foto">
+                <div class="card-heroi__overlay">
+                    <div class="card-heroi__nome">Gunnar Ulfsson</div>
+                    <div class="card-heroi__dado"><b>Idade:</b> 50 anos</div>
+                    <div class="card-heroi__dado"><b>País:</b> Noruega</div>
+                </div>
             </div>
-        </div>
 
-        <div class="cardHeroi">
-            <img src="../fotos/fotoherois/molduraheroi.jpg" class="moldura">
-            <img src="../fotos/fotoherois/mago.png" class="fotoPersonagem">
-            <div class="overlay-info">
-            <div class="nome">Merevin Le Azren</div>
-            <div class="dado"><b>Idade:</b> 22 anos</div>
-            <div class="dado"><b>País:</b> Grã-Bretanha</div>
+            <div class="card-heroi">
+                <img src="../fotos/fotoherois/molduraheroi.jpg" class="card-heroi__moldura">
+                <img src="../fotos/fotoherois/mago.png" class="card-heroi__foto">
+                <div class="card-heroi__overlay">
+                    <div class="card-heroi__nome">Merevin Le Azren</div>
+                    <div class="card-heroi__dado"><b>Idade:</b> 22 anos</div>
+                    <div class="card-heroi__dado"><b>País:</b> Grã-Bretanha</div>
+                </div>
             </div>
-        </div>
 
-        <div class="cardHeroi">
-            <img src="../fotos/fotoherois/molduraheroi.jpg" class="moldura">
-            <img src="../fotos/fotoherois/ladino.png" class="fotoPersonagem">
-            <div class="overlay-info">
-            <div class="nome">Vincent Deshret</div>
-            <div class="dado"><b>Idade:</b> 23 anos</div>
-            <div class="dado"><b>País:</b> Egito</div>
+            <div class="card-heroi">
+                <img src="../fotos/fotoherois/molduraheroi.jpg" class="card-heroi__moldura">
+                <img src="../fotos/fotoherois/ladino.png" class="card-heroi__foto">
+                <div class="card-heroi__overlay">
+                    <div class="card-heroi__nome">Vincent Deshret</div>
+                    <div class="card-heroi__dado"><b>Idade:</b> 23 anos</div>
+                    <div class="card-heroi__dado"><b>País:</b> Egito</div>
+                </div>
             </div>
-        </div>
 
-        <div class="cardHeroi">
-            <img src="../fotos/fotoherois/molduraheroi.jpg" class="moldura">
-            <img src="../fotos/fotoherois/rei.png" class="fotoPersonagem">
-            <div class="overlay-info">
-            <div class="nome">Derkis Mouris</div>
-            <div class="dado"><b>Idade:</b> 33 anos</div>
-            <div class="dado"><b>País:</b> Mongolia</div>
+            <div class="card-heroi">
+                <img src="../fotos/fotoherois/molduraheroi.jpg" class="card-heroi__moldura">
+                <img src="../fotos/fotoherois/rei.png" class="card-heroi__foto">
+                <div class="card-heroi__overlay">
+                    <div class="card-heroi__nome">Derkis Mouris</div>
+                    <div class="card-heroi__dado"><b>Idade:</b> 33 anos</div>
+                    <div class="card-heroi__dado"><b>País:</b> Mongólia</div>
+                </div>
             </div>
-        </div>
 
-        <div class="cardHeroi">
-            <img src="../fotos/fotoherois/molduraheroi.jpg" class="moldura">
-            <img src="../fotos/fotoherois/mercenario.png" class="fotoPersonagem">
-            <div class="overlay-info">
-            <div class="nome">Zaindoor Depay</div>
-            <div class="dado"><b>Idade:</b> 23 anos</div>
-            <div class="dado"><b>País:</b> Holanda</div>
+            <div class="card-heroi">
+                <img src="../fotos/fotoherois/molduraheroi.jpg" class="card-heroi__moldura">
+                <img src="../fotos/fotoherois/mercenario.png" class="card-heroi__foto">
+                <div class="card-heroi__overlay">
+                    <div class="card-heroi__nome">Zaindoor Depay</div>
+                    <div class="card-heroi__dado"><b>Idade:</b> 23 anos</div>
+                    <div class="card-heroi__dado"><b>País:</b> Holanda</div>
+                </div>
             </div>
+
         </div>
 
-</div>
-        
     </main>
 
 
-    <div class="linha-divisao"></div>
+    <div class="divisor"></div>
 
 
+    <footer class="rodape">
 
-    <footer>
+        <div class="rodape__links">
 
-    <div class="paginas-rodape">
+            <div><li><a href="#" class="rodape__link">Sobre Nós</a></li></div>
 
-     <div class="sobrenos"><li><a href="#">Sobre Nós</a></li></div>
-      
-     <div class="comunidade"><li><a href="#">Comunidade</a></li></div>
+            <div><li><a href="#" class="rodape__link">Comunidade</a></li></div>
 
-     <div class="suporte"><li><a href="#">Suporte</a></li></div>
+            <div><li><a href="#" class="rodape__link">Suporte</a></li></div>
 
-     <p class="prelude2026">© 2026 Prelude · Projeto acadêmico · USJT</p>
+            <p class="rodape__direitos">© 2026 Prelude · Projeto acadêmico · USJT</p>
 
-     </div>
+        </div>
 
-    
+        <div class="rodape__redes">
 
-     <div class="redessociais-rodape">
+            <a href="https://www.instagram.com/joakas_/" target="_blank">
+                <img src="../fotos/instagram-detailed.svg" alt="Instagram" width="35" height="35" class="rodape__icone">
+            </a>
 
-      <a href="https://www.instagram.com/joakas_/" target="_blank">
-      <img src="../fotos/instagram-detailed.svg" alt="Instagram" width="35" height="35" class="iconeredessociais-rodape" >
-      </a>
-      
+            <a href="https://www.instagram.com/joakas_/" target="_blank">
+                <img src="../fotos/mail.svg" alt="Email" width="38" height="38" class="rodape__icone">
+            </a>
 
-      <a href="https://www.instagram.com/joakas_/" target="_blank">
-      <img src="../fotos/mail.svg" alt="Email" width="38" height="38" class="iconeredessociais-rodape">
-      </a>
+            <a href="https://www.instagram.com/joakas_/" target="_blank">
+                <img src="../fotos/youtube.svg" alt="YouTube" width="38" height="39" class="rodape__icone">
+            </a>
 
+        </div>
 
-      <a href="https://www.instagram.com/joakas_/" target="_blank">
-      <img src="../fotos/youtube.svg" alt="YouTube" width="38" height="39" class="iconeredessociais-rodape">
-      </a>
-      
-     </div>
+    </footer>
 
-  </footer>
-
-    
 </body>
 </html>
