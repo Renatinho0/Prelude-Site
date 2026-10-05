@@ -9,3 +9,4 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 capitulos.forEach(cap => observer.observe(cap));
+
