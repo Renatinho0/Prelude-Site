@@ -6,6 +6,7 @@ h1,
 h2,
 nav a {
   font-family: "Pixelify Sans", monospace;
+  color: #d4af37;
 }
 
 body {
@@ -65,7 +66,7 @@ nav a {
 
 .membro h3 {
   margin: 0 0 4px;
-  color: #d4af37;
+  color:#e8d5a3;
   /* dourado mais forte, igual aos títulos */
   opacity: 1;
 }
@@ -73,7 +74,7 @@ nav a {
 .funcao {
   font-size: 0.95rem;
   font-style: italic;
-  color: #e8d5a3;
+  color:#e8d5a3;
   /* creme, mesma cor do texto do corpo */
   opacity: 0.85;
 }
