@@ -7,7 +7,10 @@
   <title>Lore | Prelude</title>
   <link rel="icon" href="../fotos/logopaginasgerais.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=IM+Fell+English&display=swap"rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="../csspaginas/lore.css">
+  <link rel="stylesheet" href="../csselementos/cabecalho.css">
+  <link rel="stylesheet" href="../csselementos/menu-pergaminhos.css">
   <link rel="stylesheet" href="../csselementos/divisor.css">
   <link rel="stylesheet" href="../csselementos/rodape.css">
 
@@ -15,7 +18,36 @@
 
 <body class="pagina-lore" id="topo">
 
-  <button class="btn-topo" title="Voltar ao topo">↑</button>
+
+  <header class="cabecalho">
+
+      <a href="PaginaInicial.html" class="cabecalho__logo">
+        <img src="../fotos/logo.png" alt="Logo Dragão" class="cabecalho__logo-img">
+      </a>
+
+      <ul class="menu-pergaminhos">
+
+        <div class="menu-pergaminhos__item menu-pergaminhos__item--inicio"><li><a href="PaginaInicial.html" class="menu-pergaminhos__link">Início</a></li></div>
+
+        <div class="menu-pergaminhos__item menu-pergaminhos__item--herois"><li><a href="Herois.html" class="menu-pergaminhos__link">Heróis</a></li></div>
+
+        <div class="menu-pergaminhos__item menu-pergaminhos__item--viloes"><li><a href="Viloes.html" class="menu-pergaminhos__link">Vilões</a></li></div>
+
+        <div class="menu-pergaminhos__item menu-pergaminhos__item--historia"><li><a href="lore.html" class="menu-pergaminhos__link">História</a></li></div>
+
+        <div class="menu-pergaminhos__item menu-pergaminhos__item--mapas"><li><a href="#" class="menu-pergaminhos__link">Mapas</a></li></div>
+
+        <div class="menu-pergaminhos__item menu-pergaminhos__item--como-jogar"><li><a href="#" class="menu-pergaminhos__link">Como Jogar</a></li></div>
+
+        <div class="menu-pergaminhos__item menu-pergaminhos__item--cartas"><li><a href="#" class="menu-pergaminhos__link">Cartas</a></li></div>
+
+      </ul>
+
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="32" height="32" class="cabecalho__icone-usuario">
+        <path d="M6 22H4v-4h2v4Zm14 0h-2v-4h2v4ZM8 18H6v-2h2v2Zm10 0h-2v-2h2v2Zm-2-2H8v-2h8v2Zm-1-4H9v-2h6v2Zm-6-2H7V4h2v6Zm8 0h-2V4h2v6Zm-2-6H9V2h6v2Z"/>
+      </svg>
+
+    </header>
 
 
   <div class="barra-progresso"></div>
@@ -187,10 +219,12 @@
         recusa a escurecer.</p>
       <p><strong>O sol está descendo. E a história começa agora.</strong></p>
     </section>
-
   </main>
 
+
   <div class="divisor"></div>
+
+
 
 
   <footer class="rodape">
