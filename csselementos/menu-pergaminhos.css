@@ -1,4 +1,4 @@
-.menu {
+.menu-pergaminhos {
   justify-content: center;
   position: relative;
   top: 25px;
@@ -10,13 +10,13 @@
   font-size: 22px;
 }
 
-.menu__link {
+.menu-pergaminhos__link {
   text-decoration: none;
   color: #d4af37;
   font-weight: bold;
 }
 
-.menu__item {
+.menu-pergaminhos__item {
   position: relative;
   background-image: url(fotos/pergaminho.png);
   background-size: 100% 100%;
@@ -29,14 +29,14 @@
   transition: 0.5s;
 }
 
-.menu__item:hover {
+.menu-pergaminhos__item:hover {
   transform: scale(1.1);
 }
 
-.menu__item--inicio     { width: 110px; }
-.menu__item--herois     { width: 125px; }
-.menu__item--viloes     { width: 115px; }
-.menu__item--historia   { width: 165px; }
-.menu__item--mapas      { width: 130px; }
-.menu__item--como-jogar { width: 220px; }
-.menu__item--cartas     { width: 150px; }
+.menu-pergaminhos__item--inicio     { width: 110px; }
+.menu-pergaminhos__item--herois     { width: 125px; }
+.menu-pergaminhos__item--viloes     { width: 115px; }
+.menu-pergaminhos__item--historia   { width: 165px; }
+.menu-pergaminhos__item--mapas      { width: 130px; }
+.menu-pergaminhos__item--como-jogar { width: 220px; }
+.menu-pergaminhos__item--cartas     { width: 150px; }
