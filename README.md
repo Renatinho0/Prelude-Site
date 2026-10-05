@@ -45,6 +45,8 @@
 
 - HTML5
 - CSS3
+- REACT
+- JavaScript
 - Google Fonts (Pixelify Sans, IM Fell English)
 
 ## Estrutura de pastas
