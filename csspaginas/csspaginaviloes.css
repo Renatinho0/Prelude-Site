@@ -267,27 +267,33 @@ transform: scale(1.1);
 }
 
 
-.botaocadastrarvilao{
-
-  background-image: url(fotos/pergaminho.png);
+.botao {
+  background-image: url(../fotos/pergaminho.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: transparent;
   color: #d4af37;
   border-radius: 20px;
-  border: none;               
+  border: none;
   cursor: pointer;
-  width: 320px;
-  height: 65px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   font-family: "Pixelify Sans", monospace;
   font-size: 22px;
   font-weight: bold;
-  text-shadow: 2px 1px rgba(0,0,0.1);                 
+  text-shadow: 2px 1px rgba(0,0,0.1);
   transition: 0.5s;
 }
 
-.botaocadastrarvilao:hover {
+.botao:hover {
   transform: scale(1.1);
+}
+
+.botao--cadastrar {
+  width: 320px;
+  height: 65px;
 }
 
 
