@@ -1,0 +1,62 @@
+.rodape {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 50px;
+}
+
+.rodape__links {
+  justify-content: center;
+  position: relative;
+  left: 100px;
+  display: flex;
+  top: 100px;
+  gap: 300px;
+  list-style: none;
+  font-size: 22px;
+}
+
+.rodape__link {
+  text-decoration: none;
+  color: #d4af37;
+  text-shadow: 2px 1px rgba(0,0,0.1);
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.rodape__link:hover {
+  color: #6b4a1e;
+  transform: scale(1.2);
+}
+
+.rodape__direitos {
+  color: #d4af37;
+  position: absolute;
+  font-weight: bold;
+  top: 155px;
+  left: 290px;
+  margin-top: 8px;
+  font-size: 18px;
+  text-shadow: 2px 1px rgba(0,0,0.1);
+}
+
+.rodape__redes {
+  position: relative;
+  display: flex;
+  top: 180px;
+  gap: 50px;
+  left: 300px;
+  width: 200px;
+}
+
+.rodape__icone {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.rodape__icone:hover {
+  transform: scale(1.2);
+}

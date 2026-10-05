@@ -1,0 +1,42 @@
+.menu {
+  justify-content: center;
+  position: relative;
+  top: 25px;
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 22px;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #d4af37;
+  font-weight: bold;
+}
+
+.menu__item {
+  position: relative;
+  background-image: url(fotos/pergaminho.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 1px rgba(0,0,0.1);
+  transition: 0.5s;
+}
+
+.menu__item:hover {
+  transform: scale(1.1);
+}
+
+.menu__item--inicio     { width: 110px; }
+.menu__item--herois     { width: 125px; }
+.menu__item--viloes     { width: 115px; }
+.menu__item--historia   { width: 165px; }
+.menu__item--mapas      { width: 130px; }
+.menu__item--como-jogar { width: 220px; }
+.menu__item--cartas     { width: 150px; }

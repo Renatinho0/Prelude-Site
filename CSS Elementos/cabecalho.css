@@ -1,0 +1,44 @@
+.cabecalho {
+  background-color: transparent;
+  height: 150px;
+  width: 100%;
+}
+
+.cabecalho__logo {
+  position: absolute;
+  top: 10px;
+  left: 45px;
+  display: block;
+  z-index: 10;
+}
+
+.cabecalho__logo-img {
+  height: 78px;
+  position: absolute;
+  left: 50px;
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.5s;
+  image-rendering: initial;
+}
+
+.cabecalho__logo-img:hover {
+  transform: scale(1.1);
+}
+
+.cabecalho__icone-usuario {
+  color: #d4af37;
+  font-weight: bold;
+  width: 43px;
+  height: 43px;
+  display: flex;
+  position: absolute;
+  left: 1670px;
+  top: 29px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.cabecalho__icone-usuario:hover {
+  transform: scale(1.1);
+}

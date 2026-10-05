@@ -1,0 +1,68 @@
+.brasoes {
+  display: flex;
+  gap: 300px;
+  justify-content: center;
+}
+
+.brasoes__zona {
+  position: relative;
+}
+
+.brasoes__escudo {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  top: 120px;
+  cursor: pointer;
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.6));
+  transition: 0.6s;
+  z-index: 2;
+}
+
+.brasoes__zona--heroi:hover .brasoes__escudo--heroi {
+  transform: translateX(30px) scale(1.05);
+}
+
+.brasoes__zona--vilao:hover .brasoes__escudo--vilao {
+  transform: translateX(-30px) scale(1.05);
+}
+
+.brasoes__pergaminho {
+  position: absolute;
+  top: 170px;
+  width: 220px;
+  padding: 20px;
+  background: #e8d3a0;
+  border: 3px solid #6b4a1e;
+  border-radius: 6px;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.brasoes__pergaminho--heroi {
+  right: 320px;
+  transform: translateX(20px);
+}
+
+.brasoes__pergaminho--vilao {
+  left: 320px;
+  transform: translateX(-20px);
+}
+
+.brasoes__zona--heroi:hover .brasoes__pergaminho--heroi {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.brasoes__zona--vilao:hover .brasoes__pergaminho--vilao {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.brasoes__titulo-pergaminho {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
