@@ -2,30 +2,58 @@
 <html lang="pt-BR">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre Nós | Prelude</title>
-  <link rel="stylesheet" href="../csspaginas/sobre.css">
+  
   <link rel="icon" href="imagens/logo.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=IM+Fell+English&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=IM+Fell+English&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="../csselementos/cabecalho.css">
+  <link rel="stylesheet" href="../csselementos/menu-pergaminhos.css">
+  <link rel="stylesheet" href="../csselementos/rodape.css">
+  <link rel="stylesheet" href="../csselementos/divisor.css">
+  <link rel="stylesheet" href="../csspaginas/sobre.css">
+
 </head>
+
+
 
 <body class="pagina-lore" id="topo">
 
-  <footer class="rodape">
-    <nav class="rodape-links">
-      <a href="PaginaInicial.html">Inícios</a>
-      <a href="sobre.html">Sobre Nós</a>
-      <a href="Herois.html">Heróis</a>
-      <a href="Viloes.html">Vilões</a>
-      <a href="lore.html">História</a>
-      <a href="mapas.html">Mapas</a>
-      <a href="como-jogar.html">Como Jogar</a>
-      <a href="cartas.html">Cartas</a>
-      <a href="comunidade.html">Comunidade</a>
-    </nav>
-</footer>
+  <header class="cabecalho">
+
+      <a href="PaginaInicial.html" class="cabecalho__logo">
+        <img src="../fotos/logo.png" alt="Logo Dragão" class="cabecalho__logo-img">
+      </a>
+
+      <ul class="menu-pergaminhos">
+
+        <div class="menu-pergaminhos__item menu-pergaminhos__item--inicio"><li><a href="PaginaInicial.html" class="menu-pergaminhos__link">Início</a></li></div>
+
+        <div class="menu-pergaminhos__item menu-pergaminhos__item--herois"><li><a href="Herois.html" class="menu-pergaminhos__link">Heróis</a></li></div>
+
+        <div class="menu-pergaminhos__item menu-pergaminhos__item--viloes"><li><a href="Viloes.html" class="menu-pergaminhos__link">Vilões</a></li></div>
+
+        <div class="menu-pergaminhos__item menu-pergaminhos__item--historia"><li><a href="lore.html" class="menu-pergaminhos__link">História</a></li></div>
+
+        <div class="menu-pergaminhos__item menu-pergaminhos__item--mapas"><li><a href="#" class="menu-pergaminhos__link">Mapas</a></li></div>
+
+        <div class="menu-pergaminhos__item menu-pergaminhos__item--como-jogar"><li><a href="#" class="menu-pergaminhos__link">Como Jogar</a></li></div>
+
+        <div class="menu-pergaminhos__item menu-pergaminhos__item--cartas"><li><a href="#" class="menu-pergaminhos__link">Cartas</a></li></div>
+
+      </ul>
+
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="32" height="32" class="cabecalho__icone-usuario">
+        <path d="M6 22H4v-4h2v4Zm14 0h-2v-4h2v4ZM8 18H6v-2h2v2Zm10 0h-2v-2h2v2Zm-2-2H8v-2h8v2Zm-1-4H9v-2h6v2Zm-6-2H7V4h2v6Zm8 0h-2V4h2v6Zm-2-6H9V2h6v2Z"/>
+      </svg>
+
+    </header>
+
+
+
 
   <main class="lore">
     <h1>Sobre Nós</h1>
@@ -104,8 +132,41 @@
 
   </main>
 
-  <footer class="rodape">© 2026 Prelude · Projeto acadêmico · USJT</footer>
 
-  <script src="js/lore.js"></script>
+  <div class="divisor"></div>
+
+
+ <footer class="rodape">
+
+    <div class="rodape__links">
+
+      <div><li><a href="sobre.html" class="rodape__link">Sobre Nós</a></li></div>
+
+      <div><li><a href="comunidade.html" class="rodape__link">Comunidade</a></li></div>
+
+      <div><li><a href="#" class="rodape__link">Suporte</a></li></div>
+
+      <p class="rodape__direitos">© 2026 Prelude · Projeto acadêmico · USJT</p>
+
+    </div>
+
+
+    <div class="rodape__redes">
+
+      <a href="https://www.instagram.com/joakas_/" target="_blank">
+        <img src="../fotos/instagram-detailed.svg" alt="Instagram" width="35" height="35" class="rodape__icone">
+      </a>
+
+      <a href="https://www.instagram.com/joakas_/" target="_blank">
+        <img src="../fotos/mail.svg" alt="Email" width="38" height="38" class="rodape__icone">
+      </a>
+
+      <a href="https://www.instagram.com/joakas_/" target="_blank">
+        <img src="../fotos/youtube.svg" alt="YouTube" width="38" height="39" class="rodape__icone">
+      </a>
+
+    </div>
+
+  </footer>
 
 </body>
