@@ -42,3 +42,12 @@
 .cabecalho__icone-usuario:hover {
   transform: scale(1.1);
 }
+
+.cabecalho__outraspaginas{
+
+  background-color: black;
+  width: 100%;
+  height: 100px;
+
+
+}
