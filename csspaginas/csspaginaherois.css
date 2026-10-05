@@ -14,9 +14,9 @@ html, body {
 .titulo-pagina {
   font-size: 40px;
   font-weight: bold;
-  color: #e8d5a3;
+  color: #d4af37;
   position: relative;
-  bottom: 20px;
+  top: 40px;
   text-align: center;
 }
 
@@ -48,8 +48,10 @@ html, body {
 }
 
 .botao--cadastrar {
+  position: relative;
   width: 320px;
   height: 65px;
+  top: 55px;
 }
 
 .pagina-herois__acao {

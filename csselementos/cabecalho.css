@@ -45,9 +45,9 @@
 
 .cabecalho__outraspaginas{
 
-  background-color: black;
+  background-color: #140d09;
   width: 100%;
-  height: 100px;
-
+  height: 109px;
+  border-bottom: 6px double #5c3c0d;
 
 }
