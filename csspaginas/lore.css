@@ -278,19 +278,3 @@ nav a {
   opacity: 1;
   pointer-events: auto;
 }
-
-
-/* ==========================================================================
-    Animação de fade-in para os capítulos
-   ========================================================================== */
-
-.capitulo {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.capitulo.visivel {
-  opacity: 1;
-  transform: translateY(0);
-}
