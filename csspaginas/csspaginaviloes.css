@@ -332,7 +332,7 @@ transform: scale(1.1);
   border-radius: 8px;
 }
 
-.overlay-info {
+.overlay-info--vilao {
   position: absolute;
   top: 15%;
   left: 15%;
@@ -354,23 +354,23 @@ transform: scale(1.1);
   cursor: pointer;
 }
 
-.cardvilao:hover .overlay-info {
+.cardVilao:hover .overlay-info--vilao {
   opacity: 1;
 }
 
-.overlay-info .nome {
+.overlay-info--vilao .nome-vilao {
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 14px;
   color: #d4af37;
 }
 
-.overlay-info .dado {
+.overlay-info--vilao .dado-vilao {
   font-size: 17px;
   margin-bottom: 6px;
 }
 
-.overlay-info .dado b {
+.overlay-info--vilao .dado-vilao b {
   color: #d4af37;
 }
 
