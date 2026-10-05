@@ -1,0 +1,254 @@
+/* =====================================================
+   Cadastro de Heróis: a carta (BEM, sem JavaScript)
+   Blocos: cadastro, carta
+   ===================================================== */
+
+.pagina-cadastro-herois {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at center, #3a2a1c 0%, #1f1610 70%);
+  color: #f0e0b0;
+  font-family: 'IM Fell English', Georgia, serif;
+}
+
+/* ---------- bloco: cadastro ---------- */
+
+.cadastro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 16px 80px;
+}
+
+.cadastro__titulo {
+  margin: 0 0 8px;
+  font-family: 'Pixelify Sans', monospace;
+  font-size: 2.4rem;
+  color: #e8d5a3;
+  text-align: center;
+}
+
+.cadastro__intro {
+  margin: 0 0 32px;
+  max-width: 44ch;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ---------- bloco: carta (o formulário) ---------- */
+
+.carta {
+  width: min(380px, 100%);
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #3b2a1a;
+  background: radial-gradient(ellipse at center, #f0e0b0 0%, #e8d5a3 55%, #c9a96a 100%);
+  border: 6px solid #a67c2e;
+  border-radius: 14px;
+  box-shadow:
+    inset 0 0 0 3px #6b4423,
+    inset 0 0 40px rgba(120, 75, 30, 0.55),
+    0 14px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* cabeçalho: nome + medalhão de idade */
+.carta__cabecalho {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #a67c2e;
+}
+
+.carta__nome {
+  flex: 1;
+  min-width: 0;
+}
+
+.carta__rotulo {
+  display: block;
+  font-size: 0.85rem;
+  color: #7a1f1f;
+}
+
+.carta__campo {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 8px;
+  font-family: 'Pixelify Sans', monospace;
+  font-size: 1.3rem;
+  color: #3b2a1a;
+  background: rgba(255, 255, 255, 0.35);
+  border: 0;
+  border-bottom: 2px solid #7a1f1f;
+  border-radius: 4px 4px 0 0;
+}
+
+.carta__medalhao {
+  flex: none;
+  width: 76px;
+  height: 76px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, #e0b84a 0%, #a67c2e 100%);
+  border: 3px solid #6b4423;
+  border-radius: 50%;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.35);
+}
+
+.carta__medalhao .carta__rotulo {
+  font-size: 0.75rem;
+  color: #3b2a1a;
+}
+
+.carta__campo--idade {
+  width: 52px;
+  padding: 0;
+  font-size: 1.4rem;
+  text-align: center;
+  background: transparent;
+  border: 0;
+  -moz-appearance: textfield;
+}
+
+.carta__campo--idade::-webkit-outer-spin-button,
+.carta__campo--idade::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* janela da arte: aqui entra a foto do herói */
+.carta__arte {
+  min-height: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+  text-align: center;
+  color: #e8d5a3;
+  background: radial-gradient(ellipse at center, #3a2a1c 0%, #1f1610 100%);
+  border: 4px solid #6b4423;
+  border-radius: 6px;
+  box-shadow: inset 0 0 24px rgba(0, 0, 0, 0.8);
+}
+
+.carta__arte-texto {
+  font-size: 1rem;
+}
+
+.carta__arquivo {
+  max-width: 100%;
+  font-family: inherit;
+  font-size: 0.85rem;
+  color: #e8d5a3;
+}
+
+.carta__arquivo::file-selector-button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  font-family: 'Pixelify Sans', monospace;
+  color: #3b2a1a;
+  background: #e8d5a3;
+  border: 2px solid #a67c2e;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* faixa da classe */
+.carta__faixa {
+  padding: 8px 12px;
+  background: #7a1f1f;
+  border: 3px solid #a67c2e;
+  border-radius: 4px;
+}
+
+.carta__faixa .carta__rotulo {
+  color: #e8d5a3;
+}
+
+.carta__selecao {
+  width: 100%;
+  padding: 4px 0;
+  font-family: 'Pixelify Sans', monospace;
+  font-size: 1.2rem;
+  color: #f0e0b0;
+  background: transparent;
+  border: 0;
+}
+
+.carta__selecao option {
+  color: #3b2a1a;
+  background: #f0e0b0;
+}
+
+/* botão */
+.carta__botao {
+  padding: 12px;
+  font-family: 'Pixelify Sans', monospace;
+  font-size: 1.2rem;
+  color: #3b2a1a;
+  background: linear-gradient(#e0b84a, #a67c2e);
+  border: 3px solid #6b4423;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+.carta__botao:hover {
+  filter: brightness(1.12);
+}
+
+/* foco visível no teclado */
+.carta__campo:focus-visible,
+.carta__selecao:focus-visible,
+.carta__arquivo:focus-visible,
+.carta__botao:focus-visible {
+  outline: 3px solid #7a1f1f;
+  outline-offset: 2px;
+}
+
+.carta__faixa .carta__selecao:focus-visible {
+  outline-color: #f0e0b0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carta__botao {
+    transition: none;
+  }
+}
+
+/* ---------- aviso do formulário e título da galeria ---------- */
+
+.carta__aviso {
+  min-height: 1.2em;
+  margin: 0;
+  font-size: 0.95rem;
+  text-align: center;
+  color: #7a1f1f;
+}
+
+.cadastro__subtitulo {
+  margin: 64px 0 24px;
+  font-family: 'Pixelify Sans', monospace;
+  font-size: 1.8rem;
+  color: #e8d5a3;
+  text-align: center;
+}
+
+/* ---------- campos extras: país e lema ---------- */
+
+.carta__campo--pequeno {
+  font-size: 1.05rem;
+}
+
+.carta__campo--pequeno::placeholder {
+  color: rgba(59, 42, 26, 0.55);
+}
