@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Heróis | Prelude</title>
+
+  <link rel="icon" href="../fotos/logopaginasgerais.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=IM+Fell+English&display=swap" rel="stylesheet">
+
+  <!-- CSS dos elementos (cabeçalho, menu, rodapé, divisor): mantenha os links que você já usa -->
+  <link rel="stylesheet" href="csscadastroherois.css">
+  <link rel="stylesheet" href="galeria-herois.css">
+</head>
+
+<body class="pagina-cadastro-herois">
+
+  <!-- CABEÇALHO / MENU: mantenha o que já existe na sua página -->
+
+  <main class="cadastro">
+    <h1 class="cadastro__titulo">Cadastro de Heróis</h1>
+    <p class="cadastro__intro">Preencha a carta para registrar um novo herói em Prelude.</p>
+
+    <form class="carta" action="#" method="post" enctype="multipart/form-data">
+
+      <div class="carta__cabecalho">
+        <div class="carta__nome">
+          <label class="carta__rotulo" for="nome">Nome</label>
+          <input class="carta__campo carta__campo--nome" type="text" id="nome" name="nome"
+                 maxlength="40" required autocomplete="off">
+        </div>
+
+        <div class="carta__medalhao">
+          <label class="carta__rotulo" for="idade">Idade</label>
+          <input class="carta__campo carta__campo--idade" type="number" id="idade" name="idade"
+                 min="1" max="120" required>
+        </div>
+      </div>
+
+      <div class="carta__arte">
+        <p class="carta__arte-texto">Imagem do herói</p>
+        <input class="carta__arquivo" type="file" id="foto" name="foto" accept="image/*">
+      </div>
+
+      <div class="carta__faixa">
+        <label class="carta__rotulo" for="classe">Classe</label>
+        <select class="carta__selecao" id="classe" name="classe" required>
+          <option value="" disabled selected>Escolha uma classe</option>
+          <option value="viking">Viking</option>
+          <option value="mago">Mago</option>
+          <option value="mercenario">Mercenário</option>
+          <option value="rei">Rei</option>
+          <option value="cavaleiro">Cavaleiro</option>
+          <option value="ladino">Ladino</option>
+        </select>
+      </div>
+
+      <div class="carta__bloco">
+        <label class="carta__rotulo" for="pais">País</label>
+        <input class="carta__campo carta__campo--pequeno" type="text" id="pais" name="pais"
+               maxlength="30" autocomplete="off">
+      </div>
+
+      <div class="carta__bloco">
+        <label class="carta__rotulo" for="lema">Lema do herói</label>
+        <input class="carta__campo carta__campo--pequeno" type="text" id="lema" name="lema"
+               maxlength="40" placeholder="Ex.: Honra, lealdade, vitória" autocomplete="off">
+      </div>
+
+      <p class="carta__aviso" role="status"></p>
+
+      <button class="carta__botao" type="submit">Cadastrar herói</button>
+    </form>
+
+    <h2 class="cadastro__subtitulo">Heróis cadastrados</h2>
+    <div class="galeria"></div>
+  </main>
+
+  <!-- RODAPÉ: mantenha o que já existe na sua página -->
+
+  <script src="../Teste-Cadastro/Json/herois.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+/* =====================================================
+   Galeria de heróis cadastrados (BEM)
+   Visual: moldura azul-acinzentada com detalhes dourados,
+   janela de arte em tom areia e fita com o lema.
+   Blocos: galeria, mini-carta
+   ===================================================== */
+
+.galeria {
+  width: min(960px, 100%);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 28px;
+}
+
+.galeria__vazio {
+  grid-column: 1 / -1;
+  margin: 0;
+  text-align: center;
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 1.1rem;
+  color: #e8d5a3;
+}
+
+.mini-carta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px;
+  color: #e8d5a3;
+  font-family: 'IM Fell English', Georgia, serif;
+  background: #3f4655;
+  border: 3px solid #a67c2e;
+  border-radius: 14px;
+  box-shadow:
+    inset 0 0 0 3px #2b303b,
+    inset 0 0 0 5px #8a6a2e,
+    0 10px 22px rgba(0, 0, 0, 0.6);
+}
+
+.mini-carta__titulo {
+  text-align: center;
+}
+
+.mini-carta__nome {
+  margin: 0;
+  overflow-wrap: anywhere;
+  font-family: 'Pixelify Sans', monospace;
+  font-size: 1.15rem;
+  color: #f0e0b0;
+}
+
+.mini-carta__classe {
+  margin: 2px 0 0;
+  font-size: 0.95rem;
+  color: #c9a96a;
+}
+
+.mini-carta__arte {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #3b2a1a;
+  background: #c9a96a;
+  border: 3px solid #1f2430;
+  border-radius: 6px;
+  box-shadow: inset 0 0 16px rgba(60, 40, 15, 0.45);
+}
+
+.mini-carta__imagem {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mini-carta__dados {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.mini-carta__lema {
+  margin: 0;
+  padding: 6px 18px;
+  text-align: center;
+  font-family: 'Pixelify Sans', monospace;
+  font-size: 0.95rem;
+  color: #2a1d0e;
+  background: linear-gradient(#d9b25a, #a67c2e);
+  clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%);
+}
+
+.mini-carta__remover {
+  align-self: center;
+  padding: 2px 10px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  color: #e8d5a3;
+  background: transparent;
+  border: 1px solid #a67c2e;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mini-carta__remover:hover {
+  color: #2a1d0e;
+  background: #a67c2e;
+}
+
+.mini-carta__remover:focus-visible {
+  outline: 3px solid #f0e0b0;
+  outline-offset: 2px;
+}
