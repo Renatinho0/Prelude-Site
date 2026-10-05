@@ -2,14 +2,8 @@
    Tipografia geral
    ========================================================================== */
 
-h1,
-h2,
-nav a {
-  font-family: "Pixelify Sans", monospace;
-}
-
 body {
-  font-family: "IM Fell English", Georgia, serif;
+ font-family: "Pixelify Sans", monospace;
 }
 
 h1 {
