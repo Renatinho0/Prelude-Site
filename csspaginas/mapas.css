@@ -1,4 +1,4 @@
-/* ============ CONFIGURAÇÃO GERAL ============ */
+/* pagina geral */
 
 .pagina-mapas,
 .pagina-mapas * {
@@ -9,31 +9,24 @@
   margin: 0;
   padding: 0;
   min-height: 100vh;
-
   font-family: "Pixelify Sans", monospace;
   color: #e8d5a3;
-
   background-color: #1c1410;
-  background-image: radial-gradient(
-    circle at center,
-    #3a2a1c 0%,
-    #1c1410 80%
-  );
+  background-image: radial-gradient(circle at center, #3a2a1c 0%, #1c1410 80%);
 }
 
 
-/* ============ ÁREA PRINCIPAL ============ */
+/* area principal */
 
 .mapas {
   width: 100%;
   max-width: 1280px;
-
   margin: 0 auto;
   padding: 40px 24px;
 }
 
 
-/* ============ INTRODUÇÃO DA PÁGINA ============ */
+/* introdução */
 
 .mapas__introducao {
   margin-bottom: 32px;
@@ -42,7 +35,6 @@
 
 .mapas__titulo {
   margin: 0 0 8px;
-
   font-size: 40px;
   color: #d4af37;
   text-shadow: 2px 2px 0 #000;
@@ -50,40 +42,35 @@
 
 .mapas__subtitulo {
   margin: 0;
-
   font-size: 20px;
   line-height: 1.6;
 }
 
-/* ============ SELEÇÃO DAS REGIÕES ============ */
+/* selecionar regiao */
 
 .atlas {
   position: relative;
 }
 
-/* Oculta as bolinhas, mantendo os controles acessíveis */
+/* Oculta as bolinhas das abas */
 .atlas__seletor {
   position: absolute;
   width: 1px;
   height: 1px;
-
   margin: -1px;
   padding: 0;
-
   overflow: hidden;
   clip-path: inset(50%);
   white-space: nowrap;
-
   border: 0;
 }
 
-/* ============ APARÊNCIA DAS ABAS ============ */
+/* aparencia das abas */
 
 .atlas__abas {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
-
   margin-bottom: 16px;
 }
 
@@ -93,18 +80,13 @@
   align-items: center;
   justify-content: center;
   gap: 6px;
-
   min-height: 80px;
   padding: 14px 16px;
-
   color: #3b2a1a;
   background-color: #e8d5a3;
-
   border: 2px solid #6b4423;
   border-radius: 4px;
-
   cursor: pointer;
-
   transition:
     background-color 0.2s,
     border-color 0.2s,
@@ -127,14 +109,13 @@
   text-align: center;
 }
 
-/* ============ ABA SELECIONADA ============ */
+/* destacar aba selecionada */
 
 .atlas__seletor--vhaldrak:checked ~ .atlas__abas .atlas__aba--vhaldrak,
 .atlas__seletor--floresta:checked ~ .atlas__abas .atlas__aba--floresta,
 .atlas__seletor--montanhas:checked ~ .atlas__abas .atlas__aba--montanhas {
   color: #7a1f1f;
   background-color: #f0e0b0;
-
   border-color: #7a1f1f;
   box-shadow: inset 0 -3px 0 #7a1f1f;
 }
@@ -147,7 +128,7 @@
   outline-offset: 3px;
 }
 
-/* ============ EXIBIÇÃO DA REGIÃO SELECIONADA ============ */
+/* exibir região selecionada */
 
 .atlas__paineis > .regiao {
   display: none;
@@ -159,7 +140,7 @@
   display: block;
 }
 
-/* ============ AGRUPAMENTO DOS PAINÉIS ============ */
+/* junção dos painéis */
 
 .atlas__paineis {
   display: grid;
@@ -167,39 +148,28 @@
 }
 
 
-/* ============ PAINEL DA REGIÃO ============ */
+/* painel da regiao */
 
 .regiao {
   padding: 28px 32px;
-
   color: #3b2a1a;
   background-color: #e8d5a3;
-  background-image: radial-gradient(
-    ellipse at center,
-    #f0e0b0 0%,
-    #e8d5a3 55%,
-    #c9a96a 100%
-  );
-
+  background-image: radial-gradient(ellipse at center,#f0e0b0 0%,#e8d5a3 55%,#c9a96a 100%);
   border: 4px solid #6b4423;
   border-radius: 6px;
-
-  box-shadow:
-    inset 0 0 40px rgba(120, 75, 30, 0.55),
+  box-shadow:inset 0 0 40px rgba(120, 75, 30, 0.55),
     0 8px 18px rgba(0, 0, 0, 0.6);
 }
 
-/* ============ APRESENTAÇÃO DA REGIÃO ============ */
+/* apresentação da regiao */
 
 .regiao__cabecalho {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 24px;
-
   margin-bottom: 24px;
   padding-bottom: 20px;
-
   border-bottom: 2px solid #a67c2e;
 }
 
@@ -210,14 +180,12 @@
 
 .regiao__titulo {
   margin: 0 0 10px;
-
   font-size: 32px;
   color: #7a1f1f;
 }
 
 .regiao__descricao {
   margin: 0;
-
   font-size: 18px;
   line-height: 1.7;
 }
@@ -226,14 +194,12 @@
   flex-shrink: 0;
   margin: 0;
   padding: 12px 16px;
-
   font-size: 16px;
   text-align: center;
-
   border: 1px solid #a67c2e;
 }
 
-/* ============ TRILHA E CAMPO DE BATALHA ============ */
+/*  mapa e campo de batalha  */
 
 .regiao__mapas {
   display: grid;
@@ -249,9 +215,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-
   margin: 0 0 4px;
-
   font-size: 24px;
   color: #5a3a1a;
 }
@@ -261,18 +225,14 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-
   width: 32px;
   height: 32px;
-
   font-size: 14px;
-
   border: 1px solid #a67c2e;
 }
 
 .regiao__mapa-subtitulo {
   margin: 0 0 14px;
-
   font-size: 16px;
   line-height: 1.5;
 }
@@ -281,47 +241,41 @@
   display: block;
   width: 100%;
   height: auto;
-
   border: 2px solid #6b4423;
   border-radius: 3px;
 }
 
 .regiao__legenda {
   margin-top: 10px;
-
   font-size: 15px;
   line-height: 1.5;
   color: #5a3a1a;
 }
 
-/* ============ MECÂNICA DA REGIÃO ============ */
+/* mecanica da regiao */
 
 .regiao__mecanica {
   margin-top: 28px;
   padding: 20px 24px;
-
   background-color: rgba(107, 68, 35, 0.08);
-
   border: 1px solid #a67c2e;
   border-left: 4px solid #a67c2e;
 }
 
 .regiao__mecanica-titulo {
   margin: 0 0 8px;
-
   font-size: 24px;
   color: #7a1f1f;
 }
 
 .regiao__mecanica-texto {
   margin: 0;
-
   font-size: 18px;
   line-height: 1.7;
 }
 
 
-/* ============ ATLAS EM TELAS MENORES ============ */
+/* atlas em telas menores */
 
 @media (max-width: 760px) {
   .atlas__abas {

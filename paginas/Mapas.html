@@ -7,26 +7,24 @@
 
   <title>Mapas | Prelude</title>
 
-  <!-- Ícone exibido na aba do navegador -->
+  <!-- icone do navegador -->
   <link rel="icon" href="../fotos/logopaginasgerais.png" type="image/png">
 
-  <!-- Fontes utilizadas pelo site -->
+  <!-- Fontes -->
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=IM+Fell+English&display=swap" rel="stylesheet">
 
-  <!-- Estilos compartilhados com as outras páginas -->
+  <!-- css links -->
   <link rel="stylesheet" href="../csselementos/cabecalho.css">
   <link rel="stylesheet" href="../csselementos/menu-pergaminhos.css">
   <link rel="stylesheet" href="../csselementos/divisor.css">
   <link rel="stylesheet" href="../csselementos/rodape.css">
-
-  <!-- O CSS próprio da página Mapas será ligado aqui -->
   <link rel="stylesheet" href="../csspaginas/mapas.css">
 
 </head>
 
 <body class="pagina-mapas">
 
-  <!-- CABEÇALHO -->
+  <!-- cabeçalho -->
   <header class="cabecalho cabecalho__outraspaginas">
 
     <a href="PaginaInicial.html" class="cabecalho__logo">
@@ -38,42 +36,20 @@
     </a>
 
     <nav aria-label="Navegação principal">
-      <ul class="menu-pergaminhos">
-
-        <li class="menu-pergaminhos__item menu-pergaminhos__item--inicio">
-          <a href="PaginaInicial.html" class="menu-pergaminhos__link">Início</a>
-        </li>
-
-        <li class="menu-pergaminhos__item menu-pergaminhos__item--herois">
-          <a href="Herois.html" class="menu-pergaminhos__link">Heróis</a>
-        </li>
-
-        <li class="menu-pergaminhos__item menu-pergaminhos__item--viloes">
-          <a href="Viloes.html" class="menu-pergaminhos__link">Vilões</a>
-        </li>
-
-        <li class="menu-pergaminhos__item menu-pergaminhos__item--historia">
-          <a href="Historia.html" class="menu-pergaminhos__link">História</a>
-        </li>
-
-        <li class="menu-pergaminhos__item menu-pergaminhos__item--mapas">
-          <a href="Mapas.html" class="menu-pergaminhos__link" aria-current="page">Mapas</a>
-        </li>
-
-        <li class="menu-pergaminhos__item menu-pergaminhos__item--como-jogar">
-          <span class="menu-pergaminhos__link" aria-disabled="true" title="Em breve">Como Jogar</span>
-        </li>
-
-        <li class="menu-pergaminhos__item menu-pergaminhos__item--cartas">
-          <span class="menu-pergaminhos__link" aria-disabled="true" title="Em breve">Cartas</span>
-        </li>
-
-      </ul>
-    </nav>
+<ul class="menu-pergaminhos">
+<li class="menu-pergaminhos__item menu-pergaminhos__item--inicio"><a href="PaginaInicial.html" class="menu-pergaminhos__link">Início</a></li>
+<li class="menu-pergaminhos__item menu-pergaminhos__item--herois"><a href="Herois.html" class="menu-pergaminhos__link">Heróis</a></li>
+<li class="menu-pergaminhos__item menu-pergaminhos__item--viloes"><a href="Viloes.html" class="menu-pergaminhos__link">Vilões</a></li>
+<li class="menu-pergaminhos__item menu-pergaminhos__item--historia"><a href="Historia.html" class="menu-pergaminhos__link">História</a></li>
+<li class="menu-pergaminhos__item menu-pergaminhos__item--mapas"><a href="Mapas.html" class="menu-pergaminhos__link" aria-current="page">Mapas</a></li>
+<li class="menu-pergaminhos__item menu-pergaminhos__item--como-jogar"><span class="menu-pergaminhos__link" aria-disabled="true" title="Em breve">Como Jogar</span></li>
+<li class="menu-pergaminhos__item menu-pergaminhos__item--cartas"><span class="menu-pergaminhos__link" aria-disabled="true" title="Em breve">Cartas</span></li>
+</ul>
+</nav>
 
   </header>
 
-  <!-- CONTEÚDO PRINCIPAL DA PÁGINA -->
+  <!-- Conteudo pagina mapas -->
   <main class="mapas">
 
     <header class="mapas__introducao">
@@ -82,9 +58,9 @@
     </header>
 
     <div class="atlas">
-  <!-- Controles de seleção das regiões -->
+  <!-- seleçao de regioes -->
 <input
-  class="atlas__seletor atlas__seletor--vhaldrak"
+  class="atlas__seletor atlas__seletor--vhaldrak" 
   type="radio"
   name="regiao-atlas"
   id="atlas-vhaldrak"
@@ -105,7 +81,7 @@
   id="atlas-montanhas"
 >
 
-<!-- Abas visíveis da página -->
+<!-- abas da pagina -->
 <div class="atlas__abas">
   <label
     class="atlas__aba atlas__aba--vhaldrak"
@@ -137,7 +113,7 @@
       class="regiao regiao--vhaldrak"
       aria-labelledby="titulo-vhaldrak"
     >
-      <!-- Apresentação da região -->
+      <!-- nome e descrição -->
       <header class="regiao__cabecalho">
         <div class="regiao__apresentacao">
           <h2 class="regiao__titulo" id="titulo-vhaldrak">
@@ -154,7 +130,7 @@
         <p class="regiao__selo">Região I</p>
       </header>
 
-      <!-- Imagens e informações dos mapas -->
+      <!-- Imagens dos mapas -->
       <div class="regiao__mapas">
         <figure class="regiao__mapa">
           <h3 class="regiao__mapa-titulo">
@@ -169,7 +145,7 @@
           <img
             class="regiao__imagem"
             src="../fotos/mapas/trilha-vhaldrak.png"
-            alt="Mapa da trilha de Vhaldrak com rotas e pontos de encontro."
+            alt="Mapa da trilha de Vhaldrak."
           >
 
           <figcaption class="regiao__legenda">
@@ -190,7 +166,7 @@
           <img
             class="regiao__imagem"
             src="../fotos/mapas/campo-vhaldrak.png"
-            alt="Tabuleiro de combate de Vhaldrak em uma cidade em ruínas."
+            alt="Tabuleiro de combate de Vhaldrak."
           >
 
           <figcaption class="regiao__legenda">
@@ -212,7 +188,7 @@
         </p>
       </div>
     </section>
-     <!-- ============ FLORESTA SOMBRIA ============ -->
+     <!--  FLORESTA SOMBRIA  -->
 
 <section
   class="regiao regiao--floresta"
@@ -248,7 +224,7 @@
       <img
         class="regiao__imagem"
         src="../fotos/mapas/trilha-floresta.png"
-        alt="Mapa da trilha da Floresta Sombria com rotas entre as árvores."
+        alt="Mapa da trilha da Floresta Sombria."
       >
 
       <figcaption class="regiao__legenda">
@@ -269,7 +245,7 @@
       <img
         class="regiao__imagem"
         src="../fotos/mapas/campo-floresta.png"
-        alt="Tabuleiro de combate da Floresta Sombria cercado por vegetação."
+        alt="Tabuleiro de combate da Floresta Sombria."
       >
 
       <figcaption class="regiao__legenda">
@@ -291,7 +267,7 @@
   </div>
 </section>
 
-<!-- ============ MONTANHAS DE GELO ============ -->
+<!--  MONTANHAS DE GELO  -->
 
 <section
   class="regiao regiao--montanhas"
@@ -327,7 +303,7 @@
       <img
         class="regiao__imagem"
         src="../fotos/mapas/trilha-montanhas.png"
-        alt="Mapa da trilha das Montanhas de Gelo com rotas entre picos nevados."
+        alt="Mapa da trilha das Montanhas de Gelo."
       >
 
       <figcaption class="regiao__legenda">
@@ -348,7 +324,7 @@
       <img
         class="regiao__imagem"
         src="../fotos/mapas/campo-montanhas.png"
-        alt="Tabuleiro de combate das Montanhas de Gelo cercado por gelo e neve."
+        alt="Tabuleiro de combate das Montanhas de Gelo."
       >
 
       <figcaption class="regiao__legenda">
@@ -374,10 +350,10 @@
 
   </main>
 
-  <!-- LINHA QUE SEPARA O CONTEÚDO DO RODAPÉ -->
+  <!-- linha roda pé -->
   <div class="divisor" aria-hidden="true"></div>
 
-  <!-- RODAPÉ -->
+  <!-- rodapé -->
   <footer class="rodape">
 
     <div class="rodape__links">
