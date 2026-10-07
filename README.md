@@ -76,7 +76,7 @@ Prelude-Site/
 - Renato Gabriel de Oliveira Mandu 1 — RA: 825512031
 - Joaquim Melo Moura 2 — RA: 825146970
 - Vinicius Moura Hosokawa 3 — RA: 825133364
-- João Rafael Martins Florencio 4 — RA: 82516076
+- João Raphael Martins Florencio 4 — RA: 825155356
 - Nicolas Santos 5 — RA: 825155356
 - Vinicius Prado de Souza 6 — 825126008
 
