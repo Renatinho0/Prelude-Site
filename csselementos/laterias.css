@@ -1,0 +1,18 @@
+/* bloco: laterais — brasas subindo pelas laterais da página */
+.laterais { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+
+.laterais__brasa {
+  position: absolute; bottom: -10px; left: var(--x); width: 4px; height: 4px; opacity: 0;
+  background: #ffb03a; box-shadow: 0 0 6px #ff7a1a;
+  animation: laterais-subir var(--dur) linear var(--delay) infinite;
+}
+
+@keyframes laterais-subir {
+  0% { transform: translate(0, 0); opacity: 0; }
+  10% { opacity: 0.9; }
+  100% { transform: translate(var(--deriva), -105vh); opacity: 0; }
+}
+
+/* telas estreitas: não há espaço nas laterais */
+@media (max-width: 1200px) { .laterais { display: none; } }
+@media (prefers-reduced-motion: reduce) { .laterais__brasa { display: none; } }
